@@ -1,0 +1,115 @@
+---
+title: "JOINTHUBS"
+output:
+  flexdashboard::flex_dashboard:
+    css: styles.css
+    logo: logo.png
+date: ''
+runtime: shiny
+---
+```{r setup, include=FALSE}
+options(scipen = 999999)
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+library(tidyverse)
+
+source("functions.r")
+```
+
+<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+Intro {data-icon="fa-braille"}
+=====================================     
+
+<center>
+
+Introduction to the project. 
+
+</center>
+
+Data {data-icon="fa-chess-board"}
+=====================================     
+
+
+Column 1{data-width=50}
+-------------------------------------
+
+```{r}
+# select from files
+# selectizeInput(
+#   "base",
+#   "Select topic",
+#   choices = str_remove_all(list.files("data")[str_detect(list.files("data"), ".rds")], ".rds"),
+#   selected = ""
+# )
+```
+
+Data description
+
+Column 2{.tabset}
+-------------------------------------
+
+### tabset 1
+
+```{r}
+
+```
+
+### tabset 2
+
+```{r}
+
+```
+
+
+Analysis {data-icon="fa-barcode"}
+=====================================     
+
+Column 2{.tabset}
+-------------------------------------
+
+### tabset 1
+```{r}
+
+```
+
+### tabset 2
+
+```{r}
+
+```
+
+
+Models {data-icon="fa-dna"}
+=====================================
+
+Column 2{data-width=50}
+-------------------------------------
+
+### Descriptions
+```{r}
+
+```
+
+More about model theory
+
+
+Column 2{.tabset}
+-------------------------------------
+
+### tabset 1
+
+```{r}
+
+```
+
+### tabset 2
+
+```{r}
+
+```
+
+
