@@ -1,5 +1,6 @@
 ---
-title: "JOINTHUBS"
+title: "PoC"
+author: "JOINTHUBS"
 output:
   flexdashboard::flex_dashboard:
     css: styles.css
@@ -24,17 +25,43 @@ source("functions.r")
 Intro {data-icon="fa-braille"}
 =====================================     
 
-<center>
+Column 1{data-width=2000}
+-------------------------------------
 
-Introduction to the project. 
+Descriptions:
 
-</center>
+* Business requirements
+
+* Data sources 
+
+* Minimal Valuable Product
+
+* other comments
+
+
+Column 2{.tabset}
+-------------------------------------
+
+### Documentation
+
+* [Google Docs]
+
+* [GitHub]
+
+* [Resources]
+
+
+### Contacts
+
+* Developer: [JOINTHUBS](https://github.com/joint-hubs)
+
+
 
 Data {data-icon="fa-chess-board"}
 =====================================     
 
 
-Column 1{data-width=50}
+Column 1{data-width=200}
 -------------------------------------
 
 ```{r}
@@ -86,7 +113,7 @@ Column 2{.tabset}
 Models {data-icon="fa-dna"}
 =====================================
 
-Column 2{data-width=50}
+Column 2{data-width=200}
 -------------------------------------
 
 ### Descriptions
